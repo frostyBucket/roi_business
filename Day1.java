@@ -6,11 +6,15 @@ public class Day1{
     File file = new File("inputs/day1.txt");
     Scanner fileReader = new Scanner(file);
     int maxElf = 0;
+    int almostMaxElf = 0;
+    int anotherAlmostMaxElf = 0;
     int currentElf = 0;
     while(fileReader.hasNextLine()){
       String line = fileReader.nextLine();
       if(line.equals("")){
         if(currentElf > maxElf){
+          anotherAlmostMaxElf = almostMaxElf;
+          almostMaxElf = maxElf;
           maxElf = currentElf;
         }
         currentElf = 0;
@@ -19,6 +23,6 @@ public class Day1{
         currentElf += Integer.parseInt(line);
       }
     }
-    System.out.println(maxElf);
+    System.out.println(maxElf+almostMaxElf+anotherAlmostMaxElf);
     }
 }
