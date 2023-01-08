@@ -24,5 +24,6 @@ public class Day1{
       }
     }
     System.out.println(maxElf+almostMaxElf+anotherAlmostMaxElf);
+    //slight update no reason
     }
 }
