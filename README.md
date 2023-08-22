@@ -1,0 +1,1 @@
+Repository from a short series of instructional videos I made to teach one of my friends about Java. Honestly, this repository only exists because I wanted to teach him about GitHub on the way, so there won't actually be any more updates here.
